@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="css/index.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <!-- /to justify page depend on the browser device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-0">
+      <div class="container">
+        <a href="#" class="navbar-brand">Car Shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"aria-current="page"  href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Contact form  -->
+
+    <section class=" p-5 text-center">
+        <div class="container ">
+        <div>
+            <h1>Contact us</h1>
+            <p >Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+        </div>
+        <div class="row">
+    
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput">
+                                <label for="floatingInput">Your name</label>
+                            </div>                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" >
+                                <label for="email">Email</label>
+                            </div>                            
+                        </div>
+    
+                    </div>
+                        <!-- subject -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-floating  mb-3">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- message -->
+                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-floating  mb-3">
+                                    <textarea type="text" id="subject" name="message" class="form-control"></textarea>
+                                    <label for="message" class="">message</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" >Send</a>
+                        </div>
+                        
+                 </form>
+             </div>
+            <div class="col-md-3 mb-md-0 mb-5"> <ul class="list-unstyled mb-0">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                      </svg> 
+                    <p>12457 carmel Indiana</p>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                        <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                      </svg>
+                      <p>hanaalnuzha@gmail.com</p>
+    
+                </li>
+            </ul>
+        </div>
+            
+    
+               
+            </div>
+    
+            
+        </div>
+    
+    </section>
+<footer class="mt-auto" >
+    <!-- Copyright -->
+    <div  class="bg-dark text-white d-flex-column text-center">
+      © 2022 Copyright:
+      <a href="/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+   
+  </body>
+</html>
