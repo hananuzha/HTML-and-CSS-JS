@@ -44,7 +44,48 @@
             <div class="row">
                 <div class="col-md-4  mb-3">
                     <div class="card" style="width:400px">
-                        <img class="card-img-top" src="../img/download.jpeg" alt="Card image">
+
+                        <!-- I will put  Carousel  for images-->
+                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            </div>
+
+
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner" id="carousel-items">
+                                <div class="carousel-item active">
+                                    <img src="../img/download.jpeg" alt="front" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/bmw2.jpeg" alt="back" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../img/bmwInside.jpeg" alt="inside" class="d-block w-100">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#demo"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#demo"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+
+
+
+
+
+
                         <div class="card-body">
                             <h4 class="card-title">BMW X5</h4>
                             <p class="card-text">The 2022 BMW X5 is a versatile player in the mid-size luxury-SUV
@@ -63,10 +104,10 @@
                     </div>
                 </div>
                 <div class="col-md-4   mb-3">
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="../img/GLE.png" alt="Card image">
-                        <div class="card-body" id="gle">
-                            <h4 class="card-title" ></h4>
+                    <div id="GLE" class="card" style="width:400px">
+                        <img class="card-img-top" alt="Card image">
+                        <div class="card-body" id="body">
+                            <h4 class="card-title"></h4>
                             <p class="card-text"></p>
                             <button type="button" class="btn btn-primary" onclick="renderPrice('marcedas')">See
                                 price</button>
@@ -81,13 +122,7 @@
                         <img class="card-img-top" src="../img/Q7.jpeg" alt="Card image">
                         <div class="card-body">
                             <h4 class="card-title">AUDI Q7</h4>
-                            <p class="card-text">Like the rest of the Audi lineup, the 2022 Q7 SUV combines a handsome
-                                design, a technology-rich cabin, and a fun-loving chassis—it just does so with room for
-                                the whole family thanks to its standard three rows of seats. The entry-level engine is a
-                                248-hp turbocharged four-cylinder, but those seeking more towing capacity or increased
-                                performance should opt for the 335-hp turbocharged V-6; all-wheel drive is standard with
-                                both engines. The Q7 can be outfitted with an adjustable air suspension and four-wheel
-                                steering for even greater comfort and agility.</p>
+                            <p id="audi" class="card-text"></p>
                             <button type="button" class="btn btn-primary" onclick="renderPrice('audi')">See
                                 price</button>
                         </div>
@@ -106,12 +141,15 @@
         <!-- Copyright -->
         <div class="bg-dark text-white d-flex-column text-center">
             © 2022 Copyright:
-            <a href="/"> carShop.com</a>
+            <a href="https://github.com/hananuzha/HTML-and-CSS-JS" target="_blank"> carShop.com</a>
         </div>
         <!-- Copyright -->
     </footer>
     <script src="../JS/Product.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
