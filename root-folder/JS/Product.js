@@ -3,7 +3,7 @@ let cars=[{
     "carTitle":"BMW X5",
     "price":70000,
     "isAvailable":true,
-    "picture":["../img/download.jpeg","../img/bmw2.jpeg","../root-folder/img/bmw inside.jpeg"],
+    "picture":["../img/download.jpeg","../img/bmw2.jpeg","../root-folder/img/bmwInside.jpeg"],
     "carDetails":"The 2022 BMW X5 is a versatile player in the mid-size luxury-SUV segment, combining a well-appointed interior and a pleasurable driving experience in one handsome package. Even the entry-level models are richly outfitted with modern technology and convenience features, not to mention a silky-smooth inline-six cylinder engine. Upgrading to the plug-in hybrid model gives the X5 the ability to drive solely on electric power for short trips while the optional twin-turbo V-8 engine delivers seriously punchy acceleration"
 },{
     "carTitle":"GLE",
@@ -38,13 +38,18 @@ cardId.innerText = car.carDetails
 
 //render the carousel items from js 
 // const carouselItems = document.getElementById("carousel-items")
+// let arrayImages=""
 // for (let i = 0; i < cars[0].picture.length; i++) {
-//     var div = document.createElement("div");
-//     div.classList.add('carousel-item');
+// arrayImages=`<img src= "${cars[0].picture[i]}"  class="d-block">`
+// var div = document.createElement("div");
+//    div.classList.add('carousel-item');
+//    div.innerHTML=arrayImages
+//    carouselItems.appendChild(div)
+// }
+
+   
 //     let image="<img src= " +cars[0].picture[i] +"  class=d-block"+">"
-//     div.innerHTML=image
-//     carouselItems.appendChild(div)
-//     console.log(carouselItems.innerHTML)
+    // console.log(carouselItems.innerHTML)
 
 // }
 
